@@ -32,3 +32,7 @@ Vou salvar estes dois dados em variáveis distintas, usar o valor de bid para mu
 
 Até o momento, faltou apontar a URL do Awesome API dentro do meu serviço, de trabalhar na função do AwesomeAPIService que faria este calculo e concluir o DTO que formataria a resposta com os key-value para o payload com os valores calculados da cotação com base no preço do produto.
 
+#### Próximos passos
+Uma feature que poderia ser incluida futuramente neste serviço é criar um gateway para o microserviço [nearby_locations](https://github.com/Jeefelix/nearby_locations),onde, eu usaria a chamada de geolocalização do cliente para duas coisas:
+ 1 - Através da geolocalização, ordenar os preços no conversor de moedas. Assim, ele visualizaria ordenado o valor de moeda do seu país primeiro na lista;
+ 2 - Permitiria a opção de "retire na loja", tendo mais uma opção além de entrega por transportadora ou correio.
