@@ -1,5 +1,7 @@
 package com.currency.converter.currencies.gateway.awesomeapi;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
@@ -11,7 +13,7 @@ public class AwesomeapiService {
     @Autowired
     private AwesomeapiGateway awesomeapiGateway;
 
-    public ResponseEntity<?> findCurrencyQuote(String currencies) {
+    public ResponseEntity<ArrayList> findCurrencyQuote(String currencies) {
         try {
             return awesomeapiGateway.findCurrencyQuote(currencies);
         } catch (Exception e) {
